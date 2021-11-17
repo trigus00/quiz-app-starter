@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
+    <div class="div">
+        <div class="container">
+            <a id="create" href="/builder.html"><button type="button">Let's build some questions ! </button></a>
+            <div class="quiz"></div>
+            <h1 style="margin-top: 5px"> Quiz about Toys</h1>
+            <hr style="margin-bottom: 10px">
+            <p id="question"></p>
+            <div class="buttons">
+                <!-- Choices  -->
+                <form id="form">
+                    <input type="radio" name="choice0" id="btn0" value="Answer A">
+                    <input type="radio" name="choice1" id="btn1" value="Answer B">
+                    <input type="radio" name="choice2" id="btn2" value="Answer C">
+                    <input type="radio" name="choice3" id="btn3" value="Answer D">
+                </form>
+
+                <button onclick="myFunction()">Try it</button>
+
+            </div>
+            <hr style="margin-top: 100px">
+
+            <!-- Footer -->
+            <footer>
+                <p id="progress"> Current question of total question </p>
+            </footer>
+            <!--  -->
+        </div>
+    </div>
     <!--Your quiz layout goes here-->
-    <script src="questions.js"></script>
-    <script src="quiz.js"></script>
+    <script src="/questions.js"></script>
+    <script src="/quiz.js"></script>
+
 </body>
+
 </html>

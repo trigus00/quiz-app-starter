@@ -1,55 +1,105 @@
-/* Your styles for the mobile/small screen view of the quiz go here*/
+:root{
+	background-color:  #ecf5ff;
+	font-size: 62.5%;
+}
+*{
+	box-sizing: border-box;
+	font-family: fantasy;
+	margin: 0;
+	padding: 0;
+	color:#333;
+}
 
-body{
-	/* background-color: darkgreen; */
-	background-image: url("toys.jpg");
+h1,
+h2,
+h3,
+h4{
+	margin-bottom: 1rem;
 }
-.id{
-	align-content: space-around;
-}
-.container{
-	
-	width: 600px;
-    height: 500px;
-    margin: auto auto;
-    background-color:whitesmoke;
-    padding: 10px 50px 50px 50px;
-    border: 10px solid #cbcbcb;
-}
-.container h1 {
-	font-family:cursive;
+h1 {
+	font-size: 5.4rem;
+	color: #185c9b;
+	margin-bottom: 5rem;
+  }
+  
+  h1 > span {
+	font-size: 2.4rem;
+	font-weight: 500;
+  }
+  
+  h2 {
+	font-size: 4.2rem;
+	margin-bottom: 4rem;
+	font-weight: 700;
+  }
+  
+  h3 {
+	font-size: 2.8rem;
+	font-weight: 500;
+  }
+
+/* BUTTONS */
+.btn {
+	font-size: 1.8rem;
+	padding: 1rem 0;
+	width: 20rem;
 	text-align: center;
-	font-size: 40px;
-	color: black;
-	padding: 1px;
-}
-.container #question {
-	text-align: center;
-	font-style: italic;
-	font-size: xx-large;
-	
-}
-
-
-#btn0, #btn1, #btn2, #btn3 {
-    background-color:gainsboro;
-    font-size: 20px;
-    color: #fff;
-    border: 1px solid #1D3C6A;
-    /* margin: 10px 40px 10px 0px;
-    padding: 10px 10px; */
-	font-family: cursive;
-} 
-#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover{
+	border: 0.1rem solid #56a5eb;
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: #56a5eb;
+	background-color: white;
+  }
+  
+  .btn:hover {
 	cursor: pointer;
-	background-color: gray;
-}
-#progress {
-	/* background-color: brown; */
-	color: #2b2b2b;
-    font-size: 18px;
-}
+	box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+	transform: translateY(-0.1rem);
+	transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+	cursor: not-allowed;
+	box-shadow: none;
+	transform: none;
+  }
+  
+  /* UTILITIES */
 
-@media all and (min-width: 600px){
-	/* Your styles for the desktop view go here */
-}
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 2rem;
+  }
+  
+  .container > * {
+	width: 100%;
+  }
+  
+  .flex-column {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .flex-center {
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .justify-center {
+	justify-content: center;
+  }
+  
+  .text-center {
+	text-align: center;
+  }
+  
+  .hidden {
+	display: none;
+  }
+  
